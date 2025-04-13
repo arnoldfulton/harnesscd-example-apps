@@ -20,10 +20,10 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: echo
-                  name: echo
+                  identifier: build_go_app
+                  name: Build Go APP
                   spec:
-                    command: echo hello world
+                    command: echo hello world go build go test
                   timeout: ""
                   type: Run
           platform:
